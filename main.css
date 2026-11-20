@@ -1,0 +1,484 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: black;
+    color: white;
+    font-family: Arial, sans-serif;
+}
+
+
+.hero {
+    min-height: 100vh;
+
+    background-image:
+        linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),
+        url("../img/movies%20tv.jpeg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 25px 4%;
+}
+
+.logo {
+    color: #e50914;
+    font-size: 42px;
+    font-weight: bold;
+    text-decoration: none;
+    line-height: 1;
+}
+
+.sign-in {
+    background-color: #e50914;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 4px;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.content {
+    text-align: center;
+    padding: 110px 20px;
+}
+
+.content h1 {
+    font-size: 55px;
+    margin-bottom: 25px;
+}
+
+.content p {
+    font-size: 28px;
+    margin-bottom: 35px;
+}
+
+.content h3 {
+    font-size: 22px;
+    font-weight: normal;
+    margin-bottom: 25px;
+}
+
+.content form {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.content input {
+    width: 55%;
+    padding: 20px;
+    font-size: 18px;
+}
+
+button {
+    background-color: #e50914;
+    color: white;
+    border: none;
+    padding: 17px 30px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #b20710;
+}
+
+
+.feature {
+    text-align: center;
+    padding: 90px 30px;
+    min-height: 650px;
+}
+
+.feature h2 {
+    font-size: 60px;
+    margin-bottom: 70px;
+}
+
+.feature p {
+    font-size: 32px;
+    line-height: 1.5;
+}
+
+.tv {
+    width: 75%;
+    max-width: 700px;
+    height: 380px;
+    margin: 80px auto 0;
+    position: relative;
+}
+
+.screen {
+    width: 100%;
+    height: 85%;
+    border: 6px solid #555;
+    background-color: black;
+}
+
+.stand {
+    width: 35%;
+    height: 25px;
+    background-color: #333;
+    margin: auto;
+}
+
+.cabinet {
+    width: 120%;
+    height: 70px;
+    background-color: #171717;
+    margin-left: -10%;
+}
+
+
+.auth-page {
+    min-height: 100vh;
+    background:
+        linear-gradient(rgba(0,0,0,.7), rgba(0,0,0,.8)),
+        url("background.jpg") center/cover fixed;
+    padding: 25px 5%;
+}
+
+.login-box {
+    width: 420px;
+    max-width: 100%;
+    background: rgba(0,0,0,.85);
+    margin: 50px auto;
+    padding: 40px;
+    border-radius: 5px;
+}
+
+.login-box h1 {
+    font-size: 32px;
+    margin-bottom: 25px;
+}
+
+.login-box p {
+    color: #aaa;
+    margin-top: 20px;
+    line-height: 1.5;
+}
+
+.login-box form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.login-box input:not([type="checkbox"]) {
+    width: 100%;
+    padding: 17px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.login-box button {
+    width: 100%;
+    border-radius: 4px;
+    margin-top: 10px;
+}
+
+.login-box a {
+    color: white;
+    text-decoration: none;
+}
+
+.login-box a:hover {
+    text-decoration: underline;
+}
+
+.help {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    font-size: 13px;
+    color: #aaa;
+}
+
+.help label {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+
+@media (max-width: 650px) {
+
+    .content {
+        padding: 80px 15px;
+    }
+
+    .content h1 {
+        font-size: 36px;
+    }
+
+    .content p {
+        font-size: 20px;
+    }
+
+    .content h3 {
+        font-size: 17px;
+    }
+
+    .content form {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content input {
+        width: 100%;
+    }
+
+    .feature h2 {
+        font-size: 38px;
+        margin-bottom: 35px;
+    }
+
+    .feature p {
+        font-size: 21px;
+    }
+
+    .tv {
+        height: 220px;
+    }
+
+    .login-box {
+        padding: 30px 22px;
+    }
+
+    .logo {
+        font-size: 32px;
+    }
+}
+
+
+.extra-section {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 80px 30px;
+    border-bottom: 8px solid #222;
+    min-height: 650px;
+}
+
+.extra-section h2 {
+    font-size: 55px;
+    margin-bottom: 70px;
+}
+
+.extra-section p {
+    font-size: 30px;
+    line-height: 1.6;
+    max-width: 950px;
+    margin: auto;
+}
+
+.extra-section img {
+    width: 80%;
+    max-width: 750px;
+    height: auto;
+    display: block;
+    margin: 70px auto 0;
+}
+
+.kids-image img {
+    max-width: 650px;
+}
+
+.download-image img {
+    max-width: 500px;
+}
+
+
+.faq-section {
+    background-color: black;
+    padding: 80px 10px;
+    color: white;
+}
+
+.faq-section h2 {
+    text-align: center;
+    font-size: 35px;
+    margin-bottom: 60px;
+}
+
+.faq-section details {
+    background-color: #303030;
+    margin: 20px auto;
+    max-width: 900px;
+    cursor: pointer;
+}
+
+.faq-section summary {
+    padding: 22px;
+    font-size: 25px;
+    font-weight: bold;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.faq-section summary::after {
+    content: "+";
+    font-size: 35px;
+}
+
+.faq-section details[open] summary::after {
+    content: "×";
+}
+
+.faq-section details p {
+    padding: 25px;
+    font-size: 21px;
+    line-height: 1.5;
+    border-top: 1px solid black;
+}
+
+
+.bottom-email {
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.bottom-email h3 {
+    font-size: 27px;
+    font-weight: normal;
+    margin-bottom: 45px;
+}
+
+.bottom-email form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.bottom-email input {
+    width: 90%;
+    max-width: 620px;
+    padding: 20px;
+    font-size: 22px;
+}
+
+.bottom-email button {
+    font-size: 20px;
+    padding: 20px 30px;
+}
+
+
+.footer {
+    background-color: black;
+    color: #777;
+    padding: 60px 10%;
+    border-top: 8px solid #222;
+}
+
+.questions {
+    font-size: 22px;
+    margin-bottom: 50px;
+}
+
+.footer-links {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.footer-links div {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footer-links a {
+    color: #777;
+    font-size: 20px;
+    text-decoration: none;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-logo {
+    margin-top: 50px;
+    font-size: 22px;
+}
+
+
+@media (max-width: 650px) {
+
+    .extra-section {
+        padding: 60px 15px;
+        min-height: auto;
+    }
+
+    .extra-section h2 {
+        font-size: 36px;
+        margin-bottom: 35px;
+    }
+
+    .extra-section p {
+        font-size: 21px;
+    }
+
+    .extra-section img {
+        width: 100%;
+        margin-top: 45px;
+    }
+
+    .faq-section h2 {
+        font-size: 27px;
+    }
+
+    .faq-section summary {
+        font-size: 18px;
+        padding: 20px;
+    }
+
+    .faq-section details p {
+        font-size: 17px;
+    }
+
+    .bottom-email h3 {
+        font-size: 20px;
+    }
+
+    .bottom-email input {
+        width: 100%;
+        font-size: 18px;
+    }
+
+    .footer {
+        padding: 45px 8%;
+    }
+
+    .footer-links {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+
+    .footer-links a {
+        font-size: 15px;
+    }
+
+    .questions {
+        font-size: 17px;
+    }
+}
